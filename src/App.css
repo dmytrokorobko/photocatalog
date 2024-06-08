@@ -1,11 +1,160 @@
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: #28342c;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
   color: white;
+}
+
+/* General */
+
+h1 {
+  margin: 10px 0 0;
+}
+
+h2 {
+  color: #dddddd;
+}
+
+ion-icon[name="heart"] {
+  color: red;
+}
+
+ion-icon[name="document-text"] {
+  color: rgb(209, 200, 115);
+}
+
+ion-icon[name="code-download"] {
+  color: #ebebeb;
+}
+
+section {
+  background-color: #4b6654;
+  padding: 20px 0 50px;
+}
+
+/* Header */
+
+header {
+  width: 100%; 
+  text-align: left;   
+}
+
+header h1 {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  cursor: default;
+}
+
+header h1 ion-icon {
+  color: #dddddd;
+}
+
+form {
+  padding: 20px 20px 30px;
+  display: grid;
+  grid-template-columns: 260px 1fr 160px;
+  justify-content: space-between;
+  column-gap: 30px;  
+}
+
+form div {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  column-gap: 7px;
+}
+
+#category,
+#search,
+#sortby {
+  padding: 10px 10px;
+  background-color: rgb(247, 247, 247);
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 1000px) {
+  form {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  form label {
+    width: 120px;
+  }
+}
+
+/* PhotoList */
+
+.photolist {
+  width: 100%;
+}
+
+.photolistitems {  
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 150px);
+  justify-content: center;
+  gap: 20px;  
+}
+
+.photolistitem {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;  
+}
+
+.photolistitem img {
+  display: block;
+  width: 100%;  
+  object-fit: cover;
+}
+
+.photolistiteminfo {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  column-gap: 15px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.photolistitem:hover .photolistiteminfo {
+  display: flex;
+}
+
+.listfoo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+
+/* PhotoItem */
+
+/* Footer */
+
+footer {
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #dddddd;
+}
+
+footer a {
+  color: #fff;
 }
