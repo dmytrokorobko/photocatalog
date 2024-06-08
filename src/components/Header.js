@@ -20,7 +20,7 @@ export function Header({category, setCategory, search, setSearch, sort,setSort})
                <input id="search" placeholder="Example: New York traffic" value={search} onChange={setSearch} />
             </div>
             <div>
-               <label htmlFor="sortBy">Sort:</label>
+               <label htmlFor="sortby">Sort:</label>
                <select id="sortby" value={sort} onChange={setSort}>
                   <option value='popular'>Popular</option>
                   <option value='latest'>Latest</option>

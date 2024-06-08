@@ -1,4 +1,4 @@
-export function PhotoList({images, caption}) {
+export function PhotoList({images, caption, imageClick}) {
    if (images === undefined) return;   
    return (      
       <section className="photolist">
@@ -8,7 +8,7 @@ export function PhotoList({images, caption}) {
          ) : (      
             <div className="photolistitems">      
                {images.map(image => (
-                  <div className="photolistitem" key={image.id}>
+                  <div className="photolistitem" key={image.id} data-key={image.id} onClick={imageClick}>
                      <img src={image.previewURL} alt="" />
                      <div className="photolistiteminfo">
                         <div className="listfoo listlikes">
