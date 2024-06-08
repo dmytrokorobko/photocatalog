@@ -40,6 +40,7 @@ Open index.html in your web browser to view the application.
 * Click on a photo to view its details.
 
 ### Project Structure
+```
 photo-catalog/
 │
 ├── css/
@@ -54,6 +55,7 @@ photo-catalog/
 ├── index.html
 │
 ├── README.md
+```
 
 ## License
 This project is open source and available under the MIT License.
