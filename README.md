@@ -2,6 +2,8 @@
 ## Introduction
 This project is a simple photo catalog application designed to test my front-end web development skills. The application allows users to view and filter a collection of photos. It is built using HTML, CSS, and JavaScript + React.
 
+Live version: [PhotoCatalog](https://dmytrokorobko.github.io/photocatalog/)
+
 ## Features
 API: Photos populated from https://pixabay.com/
 View Photos: photos are displayed in a grid layout.
